@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,41 +24,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-        </scene>
-        <!--MapVC-->
-        <scene sceneID="5DV-yr-cuY">
-            <objects>
-                <viewController restorationIdentifier="MapVC" title="MapVC" id="y1l-ek-mge" customClass="MapVC" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="j4v-0W-1le"/>
-                        <viewControllerLayoutGuide type="bottom" id="Y3w-MA-BW7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kOo-l0-hOQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TIu-MA-hjf">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJj-zJ-DwA">
-                                <rect key="frame" x="514" y="530" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="TIu-MA-hjf" firstAttribute="top" secondItem="kOo-l0-hOQ" secondAttribute="topMargin" id="HNy-Qj-c5j"/>
-                            <constraint firstItem="TIu-MA-hjf" firstAttribute="leading" secondItem="kOo-l0-hOQ" secondAttribute="leading" id="PJN-NJ-CE2"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="TIu-MA-hjf" secondAttribute="bottom" id="RZn-Kv-jLL"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="aJj-zJ-DwA" secondAttribute="bottom" constant="40" id="mA9-qs-9Qc"/>
-                            <constraint firstAttribute="trailing" secondItem="aJj-zJ-DwA" secondAttribute="trailing" constant="40" id="vOh-qk-Mv5"/>
-                            <constraint firstAttribute="trailing" secondItem="TIu-MA-hjf" secondAttribute="trailing" id="xY0-Nn-jHJ"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GJ2-Uq-DAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1185" y="400"/>
         </scene>
     </scenes>
 </document>
